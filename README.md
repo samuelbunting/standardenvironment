@@ -1,5 +1,5 @@
 # standardenvironment
-Basic settings I like for linux environments.
+Basic settings I like for Linux environments.
 
 Specifically:
 * vim
