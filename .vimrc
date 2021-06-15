@@ -3,3 +3,4 @@ set nu
 set ignorecase
 set smartcase
 set mouse -=a
+syntax on
