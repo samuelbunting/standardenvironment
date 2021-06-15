@@ -29,6 +29,7 @@ run_on_prompt_command()
     log_bash_persistent_history
 }
 PROMPT_COMMAND="run_on_prompt_command"
+alias phistory="cat ~/.persistent_history"
 
 #Fix for SSH agent on WSL, without this you may need to ssh-add on every terminal window
 #https://www.scivision.dev/ssh-agent-windows-linux/
