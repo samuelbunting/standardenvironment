@@ -1,0 +1,5 @@
+startup_message off
+vbell off
+
+hardstatus alwayslastline
+hardstatus string '%{= cd} %{= cd}%-w%{= cb}[%{= cW}%n %t%{= cb}]%{= cd}%+w %-= %{cb} %H%{cW}|%D %M %d %Y%{= cb} %C%A%{-}'
