@@ -5,7 +5,13 @@
 
 #Gotta have a fancy PS1, edit first "36m" for hostname formatting
 #https://misc.flogisoft.com/bash/tip_colors_and_formatting
-export PS1="\[\e[96;40m\]\u\[\e[0m\]@\[\e[36m\]\h\[\e[0m\]:\[\e[36m\]\w\[\e[0m\]$ "
+if [ $(id -u) -eq 0 ]
+then
+        PS1USER="\[\e[31;40m\]"
+else
+        PS1USER="\[\e[96;40m\]"
+fi
+export PS1="$PS1USER\u\[\e[0m\]@\[\e[36m\]\h\[\e[0m\]:\[\e[36m\]\w\[\e[0m\]\\$ "
 
 #Persistent history, keeps history consistent when using multiple terminal sessions
 #Small bug, wont record the last command sent, but good enough
